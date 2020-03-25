@@ -6,7 +6,7 @@ import (
 	"github.com/Dr-Evans/adder-service/rpc/adder"
 )
 
-// Server implements the Haberdasher service
+// Server implements the Adder service
 type Server struct{}
 
 func (s Server) AddTwo(ctx context.Context, req *adder.AddTwoReq) (*adder.AddTwoResp, error) {
