@@ -1,0 +1,16 @@
+syntax = "proto3";
+package twitch.moments.intern.homework.adder;
+option go_package = "adder";
+
+service Adder {
+    rpc AddTwo(AddTwoReq) returns (AddTwoResp);
+}
+
+message AddTwoReq {
+    int64 a = 1;
+    int64 b = 2;
+}
+
+message AddTwoResp {
+    int64 sum = 1;
+}
