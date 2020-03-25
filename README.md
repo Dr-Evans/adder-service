@@ -11,5 +11,11 @@ protoc --proto_path=$GOPATH/src:. --twirp_out=. --go_out=. ./rpc/adder/service.p
 
 ### Run the Service Locally
 ```shell
-go run ./cmd/adder/main.go
+go run ./cmd/adder-service/main.go
+```
+
+For an example on using the twirp client:
+
+```shell script
+go run ./cmd/adder-client/main.go
 ```
